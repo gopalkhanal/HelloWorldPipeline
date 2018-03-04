@@ -18,8 +18,8 @@ public class BaseController {
 	public String welcome(ModelMap model) {
 
 		model.addAttribute("Hello", "World");
-		//model.addAttribute("counter", ++counter);
-		//logger.debug("[welcome] counter : {}", counter);
+		model.addAttribute("counter", ++counter);
+		logger.debug("[welcome] counter : {}", counter);
 
 		// Spring uses InternalResourceViewResolver and return back index.jsp
 		return VIEW_INDEX;
